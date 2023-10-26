@@ -1,11 +1,11 @@
+import React from 'react'
+import NavBar from "./components/Navbar"
 
 
 function App() {
   return (
     <>
-    <div class="bg-slate-300">
-hello world
-    </div>
+      <NavBar/>  
     </>
   );
 }
