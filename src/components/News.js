@@ -71,16 +71,16 @@ const News = (props) => {
     },
   ];
   return (
-    <div className=" container">  
-        <div className="align-center ">
+    <>  
+        <div className="text-center ">
             NEWS Headlines
         </div>
         {articles.map((item, index) => (
-            <div key={index}>
-            <NewsItem heading={item.title} description={item.description} imageUrl={item.urlToImage} />
+            <div className="grid grid-cols-4 gap-4 " key={index}>
+            <NewsItem heading={item.title} description={item.description} imageUrl={item.urlToImage} articleUrl={item.url} />
             </div>
         ))}
-    </div>
+    </>
     );
 };
 
