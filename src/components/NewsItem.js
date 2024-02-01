@@ -1,6 +1,7 @@
 import React from "react";
 
 const NewsItem = (props) => {
+  
   return (
     <div className="container mx-auto my-4 max-w-sm border border-gray-500 rounded-xl bg-white text-black ">
       
