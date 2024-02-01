@@ -7,7 +7,7 @@ function News(props) {
 
   useEffect(() => {
     
-    const url = `https://newsapi.org/v2/everything?q=tesla&from=2024-01-01&sortBy=publishedAt&apiKey=cfef96a004ff49b186a9173a509a1897`;
+    const url = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=cfef96a004ff49b186a9173a509a1897`;
     fetch(url)
     .then (async function(res) {
     const parsedData = await res.json();
